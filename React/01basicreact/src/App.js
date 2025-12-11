@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-
 function App() {
   return (
     <h1>Ashu padh raha React</h1>

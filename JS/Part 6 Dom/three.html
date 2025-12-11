@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM hi DOM har jagah</title>
+    <style>
+        *{
+            background-color: #212121;
+            color: azure;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = 'main';
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "generated title");
+    div.style.backgroundColor = 'green';
+    div.style.padding = '10px';
+    // div.innerText = "Ashu code kar raha hai wah" // this first brings the reference then overwrites it, so it is not preferred sometimes
+    const addText = document.createTextNode("Ashu da Coder :)");
+    div.appendChild(addText); // adds our text node to the div tag
+
+    document.body.appendChild(div); // adds it to the html part so it can be viewed in the window
+
+</script>
+</html>

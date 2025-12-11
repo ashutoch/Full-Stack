@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Hehe Boi</title>
+    <style>
+        *{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent); 
+    console.log(parent.children); //gives html collection similar to arrays
+    console.log(parent.children[1]); //tuesday
+    console.log(parent.children[1].innerHTML);  //tuesday
+    
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML) //shows the inner html text of all week
+    }
+    parent.children[1].style.color = 'orange'
+    console.log(parent.firstElementChild); //monday 
+    console.log(parent.lastElementChild); //thursday
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne); //monday
+    console.log(dayOne.parentElement); //shows the whole div
+    console.log(dayOne.nextElementSibling) // shows tuesday
+
+    console.log("NODES: ", parent.childNodes);
+     // shows a complex tree structure including the linebreaks and everything
+    
+
+</script>
+</html>

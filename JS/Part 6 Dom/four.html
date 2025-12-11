@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ye DOM Khatam Kyu Nahi Hota</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<style>
+    *{
+        background-color: #212121;
+        color: aliceblue;
+    }
+</style>
+
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    } // everytime the function is called it will need to traverse the list (its in tree structure) and append the new value at the end, for large dataset this creates a problem so it is not recommened
+    addLanguage("Python")
+    addLanguage("C++")
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        // const addText = document.createTextNode(langName);
+        // li.appendChild(addText);
+        li.appendChild(document.createTextNode(langName)); // in a single line rather than writing it in 2 lines
+        document.querySelector('.language').appendChild(li);
+    } // here as we are creating a text node we dont need to traverse the tree everytime to append something
+    addOptiLanguage('Rust')
+
+    // Editing Values
+    const secondLang = document.querySelector("li:nth-child(2)");
+    secondLang.innerHTML = "GoLang" // this approach is not optimised
+
+    const newli = document.createElement('li')
+    newli.textContent = "Python"
+    secondLang.replaceWith(newli) // this is the optimised approach
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //removing element
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+
+</script>
+</html>

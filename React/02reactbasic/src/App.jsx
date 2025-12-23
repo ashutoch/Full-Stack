@@ -1,26 +1,43 @@
-// import Header from "./Header"
-import { createElement } from "react";
+function App(){
+  const name = "Ashu";
+  let x = 10;
+  let y = 20;
 
-import ToDo from "./ToDo"
-function App() {
-  // const userName = "Ashu";
-  // let x= 20; 
-  // let y = 40;
-  // return (
-  //   <>
-  //     <h1>{userName}</h1>
-  //     <h2>{10+20+30}</h2>
-  //     <h2>{x+y}</h2>
-  //     <button onClick={()=>alert("hello")}>Click me</button>
-  //   </>
-  // )
-
-  // return createElement("div", {id:"rootDiv"}, "hello inside div", createElement("h1", {class:"h1tag"}, "heading tag"))
-  return(
-    <ToDo />
-  )
+  function fruit(){
+    return "Mango";
+  }
   
+  function result(a,b){
+    return a+b;
+  }
+  
+  function operation(a, b, op){
+    // let result = 0
+    if(op =='+'){
+      return a+b
+    }
+    else if(op == '-'){
+      return a-b
+    }
+    else if(op == '*'){
+      return a*b
+    }
+    else if(op == '/'){
+      return a/b
+    }
+    else{
+      return "Invalid operation"
+    }
+  }
 
+  return (
+    <div>
+      <h1>Yippe for me</h1>
+      <h1>{name?name: "user not found"}</h1>
+      <h1>{fruit()}</h1>
+      <h1>{result(x,y)}</h1>
+      <h1>{operation(x,y,'*')}</h1>
+    </div>
+  )
 }
-
 export default App;

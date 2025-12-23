@@ -1,6 +1,7 @@
 // import Header from "./Header"
 import { createElement } from "react";
 
+import ToDo from "./ToDo"
 function App() {
   // const userName = "Ashu";
   // let x= 20; 
@@ -14,7 +15,11 @@ function App() {
   //   </>
   // )
 
-  return createElement("div", {id:"rootDiv"}, "hello inside div", createElement("h1", {class:"h1tag"}, "heading tag"))
+  // return createElement("div", {id:"rootDiv"}, "hello inside div", createElement("h1", {class:"h1tag"}, "heading tag"))
+  return(
+    <ToDo />
+  )
+  
 
 }
 

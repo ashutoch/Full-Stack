@@ -14,7 +14,7 @@ function App() {
   //   </>
   // )
 
-  return createElement("div", {id:"rootDiv"}, "hello inside div")
+  return createElement("div", {id:"rootDiv"}, "hello inside div", createElement("h1", {class:"h1tag"}, "heading tag"))
 
 }
 

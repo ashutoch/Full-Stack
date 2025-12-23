@@ -1,0 +1,22 @@
+1. What is JSX?
+Combination of JS and HTML. It helps you to write the code directly into the JS part instead of making differnt files for JS and HTML
+e.g., 
+this is the HTML part...
+<>
+    <h2>Apple</h2> 
+</>
+
+this is the HTML part inside the JS functions and it is combinedly called JSX...
+function Fruit(){
+  return (
+    <>
+      <h2>Apple</h2>
+    </>
+  )
+}
+
+
+2. How to use JSX without React?
+return createElement("div", {id:"rootDiv"}, "hello inside div")
+
+this is one of the examples and from here we 

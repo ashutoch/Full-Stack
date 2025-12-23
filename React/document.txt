@@ -16,7 +16,8 @@ function Fruit(){
 }
 
 
-2. How to use JSX without React?
+2. How to use React without JSX?
 return createElement("div", {id:"rootDiv"}, "hello inside div")
 
-this is one of the examples and from here we 
+this is one of the examples and from here we can understand it is complex and confusing and it takes a lot of time as well
+and react is mostly popular because of JSX

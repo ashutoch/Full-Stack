@@ -1,5 +1,5 @@
 function App(){
-  const name = "Ashu";
+  const name = undefined;
   let x = 10;
   let y = 20;
 
@@ -33,7 +33,8 @@ function App(){
   return (
     <div>
       <h1>Yippe for me</h1>
-      <h1>{name?name: "user not found"}</h1>
+      <h1>{name?name: "user not found"}</h1> 
+      {/* ternary operation in case the name is not defined */}
       <h1>{fruit()}</h1>
       <h1>{result(x,y)}</h1>
       <h1>{operation(x,y,'*')}</h1>

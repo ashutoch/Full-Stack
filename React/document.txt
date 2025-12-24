@@ -26,3 +26,5 @@ and react is mostly popular because of JSX
 make a function -> make button and click event -> call function on click event -> call arrow function -> pass parameters with function call
 - in react we use camel case instead of normal lowercase as in JS
 - also don't use braces [()] when calling the function inside react just pass the name because the onClick function in react just needs the function's defination and not the function call, it calls the function itself
+- to pass a parameter inside the function in react we need pass it as an arrow function
+e.g., <button onClick = {()=>fruit("apple")}></button> 

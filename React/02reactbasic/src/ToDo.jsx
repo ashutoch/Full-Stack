@@ -3,6 +3,10 @@ function ToDo() {
         alert("a function was called");
     }
 
+    const fruit = () => {
+        alert("apple")
+    }
+
     return (
         <div>
             <h1>Ashu</h1>
@@ -18,6 +22,7 @@ function ToDo() {
                 <li>Improve the spectrum technology</li>
             </ul>
             <button onClick={callFun}>Click me</button>
+            <button onClick={fruit}>fruit</button>
         </div>
     );
 }

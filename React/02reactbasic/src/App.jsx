@@ -1,3 +1,5 @@
+import ToDo from "./ToDo";
+
 function App(){
   const name = "Ashu";
   let x = 10;
@@ -55,6 +57,9 @@ function App(){
       <br />
 
       <img src={path} alt="cat" />
+
+      <ToDo />
+
     </div>
   )
 }

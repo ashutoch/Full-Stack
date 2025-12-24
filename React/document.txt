@@ -21,3 +21,8 @@ return createElement("div", {id:"rootDiv"}, "hello inside div")
 
 this is one of the examples and from here we can understand it is complex and confusing and it takes a lot of time as well
 and react is mostly popular because of JSX
+
+3. Difference between JS function call and React function call
+make a function -> make button and click event -> call function on click event -> call arrow function -> pass parameters with function call
+- in react we use camel case instead of normal lowercase as in JS
+- also don't use braces [()] when calling the function inside react just pass the name because the onClick function in react just needs the function's defination and not the function call, it calls the function itself

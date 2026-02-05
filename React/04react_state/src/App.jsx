@@ -21,7 +21,7 @@ function App(){
   const [count, setCount] = useState(0);
   return (
     <div>
-      <h1>Multiple COnditions in React JS</h1>
+      <h1>Multiple Conditions in React JS</h1>
       <h3>{count}</h3>
       {
         count == 0 ? <h3>Condition 0</h3>

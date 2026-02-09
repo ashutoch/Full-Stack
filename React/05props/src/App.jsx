@@ -24,7 +24,6 @@ function App() {
 
             <User user = {userObject} />
 
-
         </div>
     )
 }

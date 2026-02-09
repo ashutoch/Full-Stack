@@ -29,6 +29,7 @@ function User({user}){
             <h4>Name: {user.userName}</h4>
             <h4>Age: {user.age}</h4>
             <h4>Email: {user.gmail}</h4>
+            <hr />
         </div>
     )
 }

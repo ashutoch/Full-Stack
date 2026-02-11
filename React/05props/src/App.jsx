@@ -2,7 +2,7 @@ import { useState } from 'react'
 import User from './User'
 import College from './College'
 import Student from './Student'
-
+import User2 from './User2'
 
 function App() {
     // let name = "Ashu", age = 20, email = "ashu@gmail.com";
@@ -50,6 +50,7 @@ function App() {
             <button onClick={()=>setStudent("Ashu")}>Update Student Name</button>
             {/* //!passing as arrays */}
 
+            <User2 name = "Ashutosh" />
         </div>
     )
 }

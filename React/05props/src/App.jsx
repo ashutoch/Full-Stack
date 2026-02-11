@@ -3,6 +3,8 @@ import User from './User'
 import College from './College'
 import Student from './Student'
 import User2 from './User2'
+import Wrapper from './Wrapper'
+
 
 function App() {
     // let name = "Ashu", age = 20, email = "ashu@gmail.com";
@@ -50,7 +52,27 @@ function App() {
             <button onClick={()=>setStudent("Ashu")}>Update Student Name</button>
             {/* //!passing as arrays */}
 
-            <User2 name = "Ashutosh" />
+            <hr />
+
+            <User2 info ="Ashutosh" />
+            <User2 />
+            <User2 info ="Ashu" />
+            <User2 info ="Ash" />
+
+            <hr />
+
+            <Wrapper color = "lightblue">
+                <h2>Hello Everyone</h2>
+            </Wrapper >
+
+            <Wrapper>
+                <h2>Kaise ho Ashu</h2>
+            </Wrapper >
+
+            <Wrapper>
+                <h2 style={{color: "blue"}}>Just testing things out</h2>
+                <h4 style={{color: "red"}}>Is it red?</h4>
+            </Wrapper >
         </div>
     )
 }

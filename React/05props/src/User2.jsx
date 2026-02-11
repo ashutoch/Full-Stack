@@ -1,9 +1,7 @@
-function User2(name)
-{
+function User2({info = "Default User"}) {  //! defailt props as we are passing the default value inside them
     return(
         <div>
-            <h2>User Component</h2>
-            <h4>Hi, {name}</h4>
+            <h4>Hi, {info} </h4>
         </div>
     )
 }

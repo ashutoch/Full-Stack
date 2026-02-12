@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ControlledComponent from "./ControlledComponent";
 
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
 
       <h4>{val}</h4>
       <button onClick={()=>setVal("")}>Clear Value</button>
+
+      <hr />
+      <ControlledComponent />
+
     </div>
   )
 }
